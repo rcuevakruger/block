@@ -82,6 +82,16 @@
                     <input formControlName="direccion" type="text" class="form-control">
                   
                 </div>
+
+
+
+
+                <div class="form-group text-left">
+                  <label for="balance">Balance</label>
+                  
+                    <input formControlName="balance" type="number" step='any' class="form-control">
+                  
+                </div>
               
             
   
@@ -165,6 +175,15 @@
   
               </div>
             
+
+              <div class="form-group text-left">
+                <label for="balance">Balance</label>
+  
+                
+                  <input [ngModel]="balance"formControlName="balance" type="text" class="form-control">
+                
+  
+              </div>
   
   
           </div>
@@ -247,6 +266,8 @@
                   <th class="info">Email</th>
               
                   <th class="info">Direccion</th>
+                  
+                  <th class="info">Balance</th>                  
               
                 <!-- <th class="info-actions">Acciones</th> -->
             </tr>
@@ -266,6 +287,8 @@
                   <td class="participant-properties">{{participant.email}}</td>
               
                   <td class="participant-properties">{{participant.direccion}}</td>
+                  
+                  <td class="participant-properties">{{participant.balance}}</td>                  
               
               <td>
                 <button (click)="getForm(participant.idUsuario);" type="button" class="btn btn-update" data-toggle="modal" data-target="#updateParticipantModal">

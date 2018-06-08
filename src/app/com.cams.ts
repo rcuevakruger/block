@@ -17,6 +17,7 @@ import {Event} from './org.hyperledger.composer.system';
       segundoApellido: string;
       email: string;
       direccion: string;
+      balance: string;
    }
    export class banco extends Participant {
       idBanco: string;

@@ -54,7 +54,9 @@ export class usuarioComponent implements OnInit {
   
       
           direccion = new FormControl("", Validators.required);
-        
+
+          
+          balance = new FormControl("", Validators.required);   
   
 
 
@@ -82,8 +84,10 @@ export class usuarioComponent implements OnInit {
         
     
         
-          direccion:this.direccion
-        
+          direccion:this.direccion,
+
+
+          balance:this.balance    
     
     });
   };
@@ -166,8 +170,10 @@ export class usuarioComponent implements OnInit {
         
       
         
-          "direccion":this.direccion.value
-        
+          "direccion":this.direccion.value,
+
+
+          "balance":this.balance.value                  
       
     };
 
@@ -194,7 +200,10 @@ export class usuarioComponent implements OnInit {
         
       
         
-          "direccion":null
+          "direccion":null,
+
+
+          "balance":null
         
       
     });
@@ -227,8 +236,10 @@ export class usuarioComponent implements OnInit {
         
       
         
-          "direccion":null 
-        
+          "direccion":null,
+
+
+          "balance":null
       
       });
     })
@@ -277,8 +288,11 @@ export class usuarioComponent implements OnInit {
     
         
           
-            "direccion":this.direccion.value
-          
+            "direccion":this.direccion.value,
+
+
+
+            "balance":this.balance.value         
         
     
     };
@@ -357,7 +371,11 @@ export class usuarioComponent implements OnInit {
           
         
           
-            "direccion":null 
+            "direccion":null, 
+
+
+
+            "balance":null
           
         
       };
@@ -413,6 +431,13 @@ export class usuarioComponent implements OnInit {
           formObject.direccion = null;
         }
       
+        if(result.balance){
+          
+          formObject.balance = result.balance;
+        
+        }else{
+        formObject.balance = null;
+        }
 
       this.myForm.setValue(formObject);
 
@@ -455,8 +480,10 @@ export class usuarioComponent implements OnInit {
         
       
         
-          "direccion":null 
-        
+          "direccion":null,
+
+
+          "balance":null
       
       });
   }
