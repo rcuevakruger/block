@@ -25,7 +25,7 @@ export class DataService<Type> {
     private headers: Headers;
     @BlockUI() blockUI: NgBlockUI;
     constructor(private http: Http) {
-        this.actionUrl = 'http://localhost:3000/api/';
+        this.actionUrl = 'http://10.10.150.205:3000/api/';
         this.headers = new Headers();
         this.headers.append('Content-Type', 'application/json');
         this.headers.append('Accept', 'application/json');

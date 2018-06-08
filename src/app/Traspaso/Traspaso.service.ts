@@ -22,7 +22,7 @@ import 'rxjs/Rx';
 @Injectable()
 export class TraspasoService {
 
-  private NAMESPACE = 'Traspaso';
+  private NAMESPACE: string = 'Traspaso';
 
   constructor(private dataService: DataService<Traspaso>) {
   };

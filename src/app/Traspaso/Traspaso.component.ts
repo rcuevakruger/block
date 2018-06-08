@@ -60,6 +60,9 @@ export class TraspasoComponent implements OnInit {
     .then((result) => {
       this.errorMessage = null;
       result.forEach(transaction => {
+        transaction.nuevoDueno=this.optenerDescripcion(transaction.nuevoDueno);
+        transaction.antiguoDueno=this.optenerDescripcion(transaction.antiguoDueno);
+        transaction.Activo=this.optenerDescripcion(transaction.Activo);
         tempList.push(transaction);
       });
       this.allTransactions = tempList;
@@ -74,7 +77,13 @@ export class TraspasoComponent implements OnInit {
       }
     });
   }
-
+  optenerDescripcion(dato){
+    let soloDescripcion=null
+    if(dato){
+      soloDescripcion=dato.split("#")[1];
+    }
+    return soloDescripcion;
+  }
 	/**
    * Event handler for changing the checked state of a checkbox (handles array enumeration values)
    * @param {String} name - the name of the transaction field to update
@@ -103,11 +112,27 @@ export class TraspasoComponent implements OnInit {
   addTransaction(form: any): Promise<any> {
     this.Transaction = {
       $class: 'com.cams.Traspaso',
+
+
       'nuevoDueno': this.nuevoDueno.value,
+
+
+
       'antiguoDueno': this.antiguoDueno.value,
+
+      
+
       'Activo': this.Activo.value,
+
+
+
       'transactionId': this.transactionId.value,
+
+
+
       'timestamp': this.timestamp.value
+
+
     };
 
     this.myForm.setValue({
