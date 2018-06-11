@@ -38,6 +38,7 @@ import {Event} from './org.hyperledger.composer.system';
       idActivo: string;
       detallesActivo: string;
       valorActivo: number;
+      cantidad: number;
       estadoDeActivo: estado;
       enteBancario: banco;
       numeroPoliza: string;
