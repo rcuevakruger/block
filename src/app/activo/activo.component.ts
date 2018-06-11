@@ -43,6 +43,10 @@ export class activoComponent implements OnInit {
       
           valorActivo = new FormControl("", Validators.required);
         
+
+
+          cantidad = new FormControl("", Validators.required);
+
   
       
           estadoDeActivo = new FormControl("", Validators.required);
@@ -103,6 +107,10 @@ export class activoComponent implements OnInit {
     
         
           valorActivo:this.valorActivo,
+
+
+
+          cantidad:this.cantidad,
         
     
         
@@ -232,6 +240,10 @@ export class activoComponent implements OnInit {
         
           
             "valorActivo":this.valorActivo.value,
+
+
+
+            "cantidad":this.cantidad.value,            
           
         
           
@@ -292,6 +304,10 @@ export class activoComponent implements OnInit {
         
           
             "valorActivo":null,
+
+
+
+            "cantidad":null,            
           
         
           
@@ -357,6 +373,10 @@ export class activoComponent implements OnInit {
         
           
             "valorActivo":null,
+
+
+            
+            "cantidad":null,            
           
         
           
@@ -435,6 +455,12 @@ export class activoComponent implements OnInit {
         
           
             "valorActivo":this.valorActivo.value,
+
+
+            
+
+
+            "cantidad":this.cantidad.value,            
           
         
     
@@ -569,6 +595,10 @@ export class activoComponent implements OnInit {
         
           
             "valorActivo":null,
+
+
+
+            "cantidad":null,
           
         
           
@@ -643,6 +673,14 @@ export class activoComponent implements OnInit {
         }else{
           formObject.valorActivo = null;
         }
+
+        if(result.cantidad){
+          
+          formObject.cantidad = result.cantidad;
+        
+      }else{
+        formObject.cantidad = null;
+      }
       
         if(result.estadoDeActivo){
           
@@ -763,6 +801,10 @@ export class activoComponent implements OnInit {
       
         
           "valorActivo":null,
+
+
+
+          "cantidad":null,          
         
       
         
