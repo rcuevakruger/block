@@ -11,16 +11,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
+
+
 .container-fluid {
     display: grid;
-    margin-left: 72px;
+    margin-left: 15px;
     padding-left: 0px;
 }
 
 .navbar {
     border-radius: 0px;
-    background: #F3F3F3;
     border: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f76200+0,f78000+48,f78000+48,f7b400+100 */
+background: #f76200; /* Old browsers */
+background: -moz-linear-gradient(top, #f76200 0%, #f78000 48%, #f78000 48%, #f7b400 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f76200 0%,#f78000 48%,#f78000 48%,#f7b400 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f76200 0%,#f78000 48%,#f78000 48%,#f7b400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76200', endColorstr='#f7b400',GradientType=0 ); /* IE6-9 */
 }
 
 .navbar-header {
@@ -30,16 +38,21 @@
 
 .navbar-brand {
     height: 100%;
-    font-size: 32px;
+    font-size: 36px;
     letter-spacing: 0.28px;
     padding: 0px;
     margin-left: 0px !important;
-    color: #000;
+    color: #fff;
     text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
 
 .navbar-brand:hover {
-    color: #000;
+    color: #fff;
 }
 
 .network-name {
@@ -146,3 +159,4 @@
     max-height: 200px;
     overflow-x: hidden;
 }
+
