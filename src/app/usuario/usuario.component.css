@@ -18,22 +18,22 @@
 }
 
 .btn-primary {
-    background: #f76200; /* Old browsers */
-    background: -moz-linear-gradient(top, #f76200 0%, #f78000 48%, #f78000 48%, #f7b400 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #f76200 0%,#f78000 48%,#f78000 48%,#f7b400 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #f76200 0%,#f78000 48%,#f78000 48%,#f7b400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76200', endColorstr='#f7b400',GradientType=0 ); /* IE6-9 */
-    
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border-radius: 4px;
     border: 0px;
+    font-weight: 600;
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: 0;
     line-height: 10px;
     height: 40px;
-    width: 163px;
+    width: 183px;
     float: right;
     margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .table > thead > tr > th {
