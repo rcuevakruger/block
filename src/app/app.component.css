@@ -24,11 +24,13 @@
     border-radius: 0px;
     border: none;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f76200+0,f78000+48,f78000+48,f7b400+100 */
-background: #f76200; /* Old browsers */
-background: -moz-linear-gradient(top, #f76200 0%, #f78000 48%, #f78000 48%, #f7b400 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #f76200 0%,#f78000 48%,#f78000 48%,#f7b400 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #f76200 0%,#f78000 48%,#f78000 48%,#f7b400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76200', endColorstr='#f7b400',GradientType=0 ); /* IE6-9 */
+/* background: #f76200; */ /* Old browsers */
+/* background: -moz-linear-gradient(top, #f76200 0%, #f78000 48%, #f78000 48%, #f7b400 100%); */ /* FF3.6-15 */
+/* background: -webkit-linear-gradient(top, #f76200 0%,#f78000 48%,#f78000 48%,#f7b400 100%); */ /* Chrome10-25,Safari5.1-6 */
+/* background: linear-gradient(to bottom, #f76200 0%,#f78000 48%,#f78000 48%,#f7b400 100%); */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76200', endColorstr='#f7b400',GradientType=0 ); */ /* IE6-9 */
+    background-image: url(banner.png);
+    background-size: cover;
 }
 
 .navbar-header {
@@ -64,6 +66,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76200', end
     letter-spacing: 2px;
 }
 
+.navbar-nav {
+    margin-left: 58px;
+    
+}
 .navbar-nav > li {
     margin-right: 12px;
     cursor: pointer;
@@ -81,9 +87,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76200', end
 }
 
 .navbar-nav > li > a {
+    background-color: rgb(234, 237, 240);
     color: #000;
     padding: 10px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .navbar-nav > li > .active:hover > a {
@@ -92,6 +99,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76200', end
 
 .navbar-nav > li:hover > a {
     color: #000;
+    font-weight: 500;
 }
 
 .navbar-nav .active > a {
@@ -160,3 +168,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76200', end
     overflow-x: hidden;
 }
 
+.dropdown-toggle {
+    border-radius: 25px 25px 0px 0px;    
+}
+
+.dropdown:hover {
+    border-radius: 25px 25px 0px 0px;    
+}
