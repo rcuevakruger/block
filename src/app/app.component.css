@@ -15,6 +15,9 @@
  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
  @import url('https://fonts.googleapis.com/css?family=Poppins:500');
 
+ *{
+    font-family: 'Montserrat', sans-serif;
+ }
 
 .container-fluid {
     display: grid;
@@ -29,9 +32,10 @@
     background-image: url(banner.png);
     background-size: cover;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5111a0+0,b91ae7+100 */
-    background: #ff00cc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .navbar-header {
@@ -83,36 +87,44 @@
 
 .navbar-nav > a {
     font-size: 14px;
-    color: #343C41;
+    color: #fff;
     letter-spacing: 0.2px;
+    border: #fff 1px solid;
 }
 
 .navbar-nav > li:hover {
     background-color: #fff;
-    color: #000;
+    color: #5407E0;
 }
 
 .navbar-nav > li > a {
-    background-color: rgb(234, 237, 240);
-    color: #000;
+    background-color: rgb(236, 236, 236);
+    color: #5407E0;
     padding: 10px;
     font-weight: 500;
+    border: rgb(236, 236, 236) 1px solid;
 }
 
 .navbar-nav > li > .active:hover > a {
-    color: #e56438 !important;
+    color: #5407E0 !important;
 }
 
 .navbar-nav > li:hover > a {
-    color: #000;
-    font-weight: 500;
+    color: #5407E0;
 }
 
 .navbar-nav .active > a {
     background-color: #fff;
-    color: #e56438 !important;
+    color: #5407E0 !important;
+    border: #fff 1px solid;
 }
 
+.navbar-nav .active:hover > a {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff !important;
+}
 .dropdown-menu {
     border-radius: 0px;
     border: none;
@@ -122,7 +134,6 @@
     display: block;
     overflow: hidden;
     visibility: hidden;
-
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;

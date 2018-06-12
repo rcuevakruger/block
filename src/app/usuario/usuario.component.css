@@ -30,10 +30,15 @@
     letter-spacing: 0;
     line-height: 10px;
     height: 40px;
-    width: 183px;
+    width: 200px;
     float: right;
     margin-top: 5%;
     font-family: 'Montserrat', sans-serif;
+}
+
+.btn-primary:hover{
+    background: #54426B; 
+    color: #fff;
 }
 
 .table > thead > tr > th {
