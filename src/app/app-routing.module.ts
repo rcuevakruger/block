@@ -15,17 +15,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // import { TransactionComponent } from './Transaction/Transaction.component'
-import { HomeComponent } from './home/home.component';
-
-import { activoComponent } from './activo/activo.component';
-
-
+  import { HomeComponent } from './home/home.component';
+  import { activoComponent } from './activo/activo.component';
   import { usuarioComponent } from './usuario/usuario.component';
   import { bancoComponent } from './banco/banco.component';
   import { aseguradoraComponent } from './aseguradora/aseguradora.component';
   import { reaseguradoraComponent } from './reaseguradora/reaseguradora.component';
-
-
   import { ConfirmacionBancoComponent } from './ConfirmacionBanco/ConfirmacionBanco.component';
   import { AsegurarActivoComponent } from './AsegurarActivo/AsegurarActivo.component';
   import { ReasegurarActivoComponent } from './ReasegurarActivo/ReasegurarActivo.component';
