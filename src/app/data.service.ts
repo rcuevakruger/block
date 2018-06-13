@@ -25,14 +25,14 @@ export class DataService<Type> {
     private headers: Headers;
     @BlockUI() blockUI: NgBlockUI;
     constructor(private http: Http) {
-        this.actionUrl = 'http://localhost:3000/api/';
+        this.actionUrl = 'http://10.10.150.205:3000/api/';
         this.headers = new Headers();
         this.headers.append('Content-Type', 'application/json');
         this.headers.append('Accept', 'application/json');
     }
 
     public getAll(ns: string): Observable<Type[]> {
-        this.blockUI.start('Loading...');
+        this.blockUI.start('Cargando...');
         console.log('GetAll ' + ns + ' to ' + this.actionUrl + ns);
         return this.http.get(`${this.actionUrl}${ns}`)
             .map(this.extractData)
@@ -44,7 +44,7 @@ export class DataService<Type> {
     }
 
     public getSingle(ns: string, id: string): Observable<Type> {
-        this.blockUI.start('Loading...');
+        this.blockUI.start('Cargando...');
         console.log('GetSingle ' + ns);
 
         return this.http.get(this.actionUrl + ns + '/' + id + this.resolveSuffix)
@@ -55,7 +55,7 @@ export class DataService<Type> {
     }
 
     public add(ns: string, asset: Type): Observable<Type> {
-        this.blockUI.start('Loading...');
+        this.blockUI.start('Cargando...');
         console.log('Entered DataService add');
         console.log('Add ' + ns);
         console.log('asset', asset);
@@ -68,7 +68,7 @@ export class DataService<Type> {
     }
 
     public update(ns: string, id: string, itemToUpdate: Type): Observable<Type> {
-        this.blockUI.start('Loading...');
+        this.blockUI.start('Cargando...');
         console.log('Update ' + ns);
         console.log('what is the id?', id);
         console.log('what is the updated item?', itemToUpdate);
@@ -81,7 +81,7 @@ export class DataService<Type> {
     }
 
     public delete(ns: string, id: string): Observable<Type> {
-        this.blockUI.start('Loading...');
+        this.blockUI.start('Cargando...');
         console.log('Delete ' + ns);
 
         return this.http.delete(this.actionUrl + ns + '/' + id)

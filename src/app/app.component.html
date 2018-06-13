@@ -15,32 +15,34 @@
     <div class="container-fluid">
       <div class="navbar-header centrar">
         <!-- <p class="network-name">crypto-asset-management-system@0.0.1.bna</p> -->
-        <h1 class="navbar-brand">Cripto Assets by  </h1><br>
+        <h1 class="navbar-brand">Crypto Assets</h1><br>
         <img src="https://i1.wp.com/krugercorporation.com/wp-content/uploads/logo-kruger-2016-blanco.png?w=1080" align="middle" width="150" height="70">
       </div>
       <ul class="nav navbar-nav">
-        <li class="dropdown active">
-          <a class="dropdown-toggle" data-toggle="dropdown">Participantes</a>
+
+      <li class="dropdown active">
+        <a class="dropdown-toggle" data-toggle="dropdown">Participantes</a>
+        <ul class="dropdown-menu scrollable-menu">
+          
+          <li><a [routerLink]="['/usuario']">Usuario</a></li>
+          
+          <li><a [routerLink]="['/banco']">Banco</a></li>
+          
+          <li><a [routerLink]="['/aseguradora']">Aseguradora</a></li>
+          
+          <li><a [routerLink]="['/reaseguradora']">Reaseguradora</a></li>
+          
+        </ul>
+      </li>
+
+      <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown">Activos</a>
           <ul class="dropdown-menu scrollable-menu">
             
-            <li><a [routerLink]="['/usuario']">Usuario</a></li>
-            
-            <li><a [routerLink]="['/banco']">Banco</a></li>
-            
-            <li><a [routerLink]="['/aseguradora']">Aseguradora</a></li>
-            
-            <li><a [routerLink]="['/reaseguradora']">Reaseguradora</a></li>
+            <li><a [routerLink]="['/activo']">Activo</a></li>
             
           </ul>
-        </li>
-                <li class="dropdown active">
-                    <a class="dropdown-toggle" data-toggle="dropdown">Activos</a>
-                    <ul class="dropdown-menu scrollable-menu">
-                      
-                      <li><a [routerLink]="['/activo']">Activo</a></li>
-                      
-                    </ul>
-                </li>
+      </li>
       <li class="dropdown active">
         <a class="dropdown-toggle" data-toggle="dropdown">Transacciones</a>
         <ul class="dropdown-menu scrollable-menu">
