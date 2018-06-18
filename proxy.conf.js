@@ -14,12 +14,12 @@
 
 module.exports = [{
     context: ['/auth', '/api'],
-    target: process.env.REST_SERVER_URL || 'http://localhost:3000',
+    target: process.env.REST_SERVER_URL || 'http://10.10.150.205:4200',
     secure: true,
     changeOrigin: true
 }, {
     context: '/',
-    target: process.env.REST_SERVER_URL || 'http://localhost:3000',
+    target: process.env.REST_SERVER_URL || 'http://10.10.150.205:4200',
     secure: true,
     changeOrigin: true,
     ws: true,
