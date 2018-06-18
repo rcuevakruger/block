@@ -158,10 +158,10 @@
       </div>
     
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-2">
           <h1 class="participant-title" id='participantName'>Banco</h1>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-10">
         <button (click)="resetForm()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addParticipantModal">
             <span style="font-size: 14px;font-family: inherit;border-right:1px solid rgba(255,255,255,0.5);padding-right:0.6em;margin-right:0.5em;vertical-align:middle;">
                 <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
@@ -175,8 +175,10 @@
     <br>
     <div class="row">
       <div class="col-md-12">
-        <table class="table table-responsive">
-          <thead class="thead">
+
+          <div class="table-users">
+
+        <table class="table">
             <tr class="thead-cols">
               
                   <th class="info">Banco</th>
@@ -185,18 +187,16 @@
               
                   <th class="info">Numero de telefono</th>
               
-                <!-- <th class="info-actions">Acciones</th> -->
+                  <th class="info-actions"></th>
             </tr>
-          </thead>
-          <tbody>
+
             <tr *ngFor="let participant of allParticipants">
   
+                  <td>{{participant.idBanco}}</td>
               
-                  <td class="participant-properties">{{participant.idBanco}}</td>
+                  <td>{{participant.email}}</td>
               
-                  <td class="participant-properties">{{participant.email}}</td>
-              
-                  <td class="participant-properties">{{participant.numeroTelf}}</td>
+                  <td>{{participant.numeroTelf}}</td>
               
               <td>
                 <button (click)="getForm(participant.idBanco);" type="button" class="btn btn-update" data-toggle="modal" data-target="#updateParticipantModal">
@@ -224,8 +224,8 @@
                 </button>
               </td>
             </tr>
-          </tbody>
         </table>
+        </div>
       </div>
     </div>
   </div>
