@@ -20,7 +20,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
   selector: 'app-traspaso',
   templateUrl: './Traspaso.component.html',
-  styleUrls: ['./Traspaso.component.css'],
+  styleUrls: ['./Traspaso.component.scss'],
   providers: [TraspasoService]
 })
 export class TraspasoComponent implements OnInit {

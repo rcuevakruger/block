@@ -19,7 +19,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
   selector: 'app-ConfirmacionBanco',
   templateUrl: './ConfirmacionBanco.component.html',
-  styleUrls: ['./ConfirmacionBanco.component.css'],
+  styleUrls: ['./ConfirmacionBanco.component.scss'],
   providers: [ConfirmacionBancoService]
 })
 export class ConfirmacionBancoComponent implements OnInit {

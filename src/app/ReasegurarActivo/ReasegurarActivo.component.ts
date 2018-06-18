@@ -19,7 +19,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
 	selector: 'app-ReasegurarActivo',
 	templateUrl: './ReasegurarActivo.component.html',
-	styleUrls: ['./ReasegurarActivo.component.css'],
+	styleUrls: ['./ReasegurarActivo.component.scss'],
   providers: [ReasegurarActivoService]
 })
 export class ReasegurarActivoComponent implements OnInit {
