@@ -204,11 +204,12 @@ margin-left: -4px;
     margin: 1em auto;
     overflow: hidden;
     // width: 800px;
- }
+}
 
- table {
+table {
     width: 100%;
-    
+    margin-bottom: 0px;
+
     td, th { 
        color: #398B93;
        padding: 10px; 
