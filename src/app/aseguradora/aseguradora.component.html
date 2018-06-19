@@ -175,8 +175,10 @@
     <br>
     <div class="row">
       <div class="col-md-12">
-        <table class="table table-responsive">
-          <thead class="thead">
+
+          <div class="table-users">
+
+        <table class="table">
             <tr class="thead-cols">
               
                   <th class="info">Aseguradora</th>
@@ -185,10 +187,8 @@
               
                   <th class="info">Numero de telefono</th>
               
-                <!-- <th class="info-actions">Acciones</th> -->
+                  <th class="info-actions">Acciones</th>
             </tr>
-          </thead>
-          <tbody>
             <tr *ngFor="let participant of allParticipants">
   
               
@@ -224,8 +224,8 @@
                 </button>
               </td>
             </tr>
-          </tbody>
         </table>
+        </div>
       </div>
     </div>
   </div>
