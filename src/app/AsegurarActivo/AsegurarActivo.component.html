@@ -354,7 +354,7 @@
       <table class="table">
           <tr class="thead-cols">
 
-            <th class="info">Estado</th>
+            <th class="info">Activo</th>
 
             <th class="info">N° Póliza</th>
 
@@ -368,9 +368,7 @@
 
             <th class="info">Aseguradora</th>
             
-            <th class="info">Activo</th>
-
-            <th class="info">Id</th>
+            <th class="info">Estado</th>
 
             <th class="info">Fecha</th>
 
@@ -379,7 +377,7 @@
           <tr *ngFor="let asset of allTransactions">
 
 
-            <td class="asset-properties">{{asset.estadoDeActivo}}</td>
+            <td class="asset-properties">{{asset.Activo}}</td>
 
             <td class="asset-properties">{{asset.numeroPoliza}}</td>
 
@@ -393,7 +391,7 @@
 
             <td class="asset-properties">{{asset.aseguradoraEncargada}}</td>
 
-            <td class="asset-properties">{{asset.Activo}}</td>
+            <td class="asset-properties">{{asset.estadoDeActivo}}</td>
 
             <td class="asset-properties">{{asset.timestamp}}</td>
 
