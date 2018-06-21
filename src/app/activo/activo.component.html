@@ -29,7 +29,7 @@
               <div class="form-group text-left">
                 <label for="idActivo">Activo</label>
                 
-                  <input formControlName="idActivo" type="text" class="form-control">
+                  <input formControlName="idActivo" type="text" class="form-control" placeholder="id de activo + iniciales = OROrc">
                 
               </div>
             
@@ -39,7 +39,7 @@
               <div class="form-group text-left">
                 <label for="detallesActivo">Detalles de activo</label>
                 
-                  <input formControlName="detallesActivo" type="text" class="form-control">
+                  <input formControlName="detallesActivo" type="text" class="form-control" placeholder="descripción del activo">
                 
               </div>
             
@@ -49,7 +49,7 @@
               <div class="form-group text-left">
                 <label for="valorActivo">Valor de activo</label>
                 
-                  <input formControlName="valorActivo" type="number" step='any' class="form-control">
+                  <input formControlName="valorActivo" type="number" step='any' class="form-control" placeholder="valor en dolares">
                 
               </div>
 
@@ -59,7 +59,7 @@
               <div class="form-group text-left">
                 <label for="cantidad">Cantidad</label>
                 
-                  <input formControlName="cantidad" type="number" step='any' class="form-control">
+                  <input formControlName="cantidad" type="number" step='any' class="form-control" placeholder="cantidad en gramos">
                 
               </div>
           
@@ -232,7 +232,7 @@
               <div class="form-group text-left">
                 <label for="propietario">Propietario</label>
                 
-                    <textarea formControlName="propietario" class="form-control" rows="3"></textarea>
+                    <textarea formControlName="propietario" class="form-control" rows="3" placeholder="dueño del activo"></textarea>
                 
               </div>
             
@@ -597,7 +597,7 @@
             
                 <td>{{asset.detallesActivo}}</td>
             
-                <td>{{asset.valorActivo}}</td>
+                <td>{{asset.valorActivo}} dolares</td>
 
                 <td>{{asset.cantidad}} gramos</td>
             
@@ -605,9 +605,9 @@
             
                 <td>{{asset.enteBancario}}</td>
             
-                <td>{{asset.numeroPoliza}}</td>
+                <td>N° {{asset.numeroPoliza}}</td>
             
-                <td>{{asset.fechaSolicitud}}</td>
+                <td>{{asset.fechaSolicitud | date: 'yyyy-MM-dd HH:mm:ss'}}</td>
             
                 <td>{{asset.formaPago}}</td>
             
