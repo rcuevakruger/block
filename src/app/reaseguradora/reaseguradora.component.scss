@@ -277,10 +277,8 @@ table {
           }
        }
  
-       &:nth-child(2):before { content: 'Name:'; }
-       &:nth-child(3):before { content: 'Email:'; }
-       &:nth-child(4):before { content: 'Phone:'; }
-       &:nth-child(5):before { content: 'Comments:'; }
+       &:nth-child(2):before { content: 'Email:'; }
+       &:nth-child(3):before { content: 'Numero de telefono:'; }
     }
     
     tr {
