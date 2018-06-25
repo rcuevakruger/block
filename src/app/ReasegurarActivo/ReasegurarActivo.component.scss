@@ -277,8 +277,8 @@ table {
           }
        }
  
+       &:nth-child(3):before { content: 'Estado:'; }
        &:nth-child(2):before { content: 'Reaseguradora Encargada:'; }
-       &:nth-child(3):before { content: 'Activo:'; }
        &:nth-child(4):before { content: 'Fecha:'; }
     }
     

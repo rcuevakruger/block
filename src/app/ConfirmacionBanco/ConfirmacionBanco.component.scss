@@ -277,8 +277,8 @@ table {
           }
        }
  
-       &:nth-child(2):before { content: 'Banco Encargado:'; }
-       &:nth-child(3):before { content: 'Activo:'; }
+       &:nth-child(2):before { content: 'Estado:'; }
+       &:nth-child(3):before { content: 'Banco Encargado:'; }
        &:nth-child(4):before { content: 'Fecha:'; }
     }
     

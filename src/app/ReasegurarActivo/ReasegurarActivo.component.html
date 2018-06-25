@@ -262,28 +262,25 @@
           
           <table class="table">
              <tr class="thead-cols">
-
-            <th class="info">Estado de Activo</th>
-
-            <th class="info">Reaseguradora Encargada</th>
-
-            <th class="info">Activo</th>
-
-          
-            <th class="info">Fecha</th>
-
-            <th class="info-actions"></th>
+               
+              <th class="info">Activo</th>
+               
+               <th class="info">Estado de Activo</th>
+               
+               <th class="info">Reaseguradora Encargada</th>
+               
+               <th class="info">Fecha</th>
+               
+               <th class="info-actions"></th>
           </tr>
           <tr *ngFor="let asset of allTransactions">
 
 
-            <td class="asset-properties">{{asset.estadoDeActivo}}</td>
-
-            <td class="asset-properties">{{asset.reaseguradoraEncargada}}</td>
-
             <td class="asset-properties">{{asset.Activo}}</td>
-
-
+            
+            <td class="asset-properties">{{asset.estadoDeActivo}}</td>
+            
+            <td class="asset-properties">{{asset.reaseguradoraEncargada}}</td>
 
             <td class="asset-properties">{{asset.timestamp}}</td>
 

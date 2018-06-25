@@ -277,13 +277,13 @@ table {
           }
        }
  
-       &:nth-child(2):before { content: 'N° Póliza:'; }
-       &:nth-child(3):before { content: 'Pago:'; }
-       &:nth-child(4):before { content: 'Vigencia:'; }
+       &:nth-child(8):before { content: 'Estado:'; }
        &:nth-child(5):before { content: 'Solicitante:'; }
-       &:nth-child(6):before { content: 'Monto Asegurado:'; }
        &:nth-child(7):before { content: 'Aseguradora:'; }
-       &:nth-child(8):before { content: 'Activo:'; }
+       &:nth-child(6):before { content: 'Monto Asegurado:'; }
+       &:nth-child(2):before { content: 'N° Póliza:'; }
+       &:nth-child(4):before { content: 'Vigencia:'; }
+       &:nth-child(3):before { content: 'Pago:'; }
        &:nth-child(9):before { content: 'Fecha:'; }
     }
     

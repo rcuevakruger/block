@@ -203,6 +203,7 @@ margin-left: -4px;
     // max-width: calc(100% - 2em);
     margin: 1em auto;
     overflow: hidden;
+    border: #dddbdb 1px solid;
     // width: 800px;
 }
 
@@ -237,6 +238,9 @@ table {
     }
  }
  
+
+
+
   @media screen and (max-width: 756px) {   
     table, tr, td { display: block; }
  
@@ -395,4 +399,9 @@ table {
        box-shadow: none;
        overflow: visible;
     }
+ }
+
+ .scrollit {
+     overflow:scroll;
+     height: 187px;
  }
