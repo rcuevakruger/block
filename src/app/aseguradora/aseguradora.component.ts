@@ -19,7 +19,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
 	selector: 'app-aseguradora',
 	templateUrl: './aseguradora.component.html',
-	styleUrls: ['./aseguradora.component.css'],
+	styleUrls: ['./aseguradora.component.scss'],
   providers: [aseguradoraService]
 })
 export class aseguradoraComponent implements OnInit {

@@ -29,7 +29,7 @@
               <div class="form-group text-left">
                 <label for="nuevoDueno">Nuevo Dueño</label>
                 
-                    <textarea formControlName="nuevoDueno" class="form-control" rows="3"></textarea>
+                    <textarea formControlName="nuevoDueno" class="form-control" rows="3" placeholder="id de nuevo dueño"></textarea>
                 
               </div>
             
@@ -39,7 +39,7 @@
               <div class="form-group text-left">
                 <label for="antiguoDueno">Antiguo Dueño</label>
                 
-                    <textarea formControlName="antiguoDueno" class="form-control" rows="3"></textarea>
+                    <textarea formControlName="antiguoDueno" class="form-control" rows="3" placeholder="id de antiguo dueño"></textarea>
                 
               </div>
             
@@ -49,7 +49,7 @@
               <div class="form-group text-left">
                 <label for="Activo">Activo</label>
                 
-                    <textarea formControlName="Activo" class="form-control" rows="3"></textarea>
+                    <textarea formControlName="Activo" class="form-control" rows="3" placeholder="id de activo"></textarea>
                 
               </div>
             
@@ -220,35 +220,35 @@
   </div>
   <br>
   <div class="row">
-    <div class="col-md-12">
-      <table class="table table-responsive">
-        <thead class="thead">
-          <tr class="thead-cols">
+      <div class="col-md-12">
 
-            <th class="info">Nuevo Dueno</th>
+        <div class="table-users">
+          
+          <table class="table">
+             <tr class="thead-cols">
+               
+              <th class="info">Activo</th>
+               
+              <th class="info">Nuevo Dueño</th>
+   
+              <th class="info">Antiguo Dueño</th>
 
-            <th class="info">Antiguo Dueno</th>
-
-            <th class="info">Activo</th>
-
-            <th class="info">Transaction</th>
+            <!-- <th class="info">Transaction</th> -->
 
             <th class="info">Fecha</th>
 
-            
+
           </tr>
-        </thead>
-        <tbody>
           <tr *ngFor="let asset of allTransactions">
 
+            <td class="asset-properties">{{asset.Activo}}</td>
 
             <td class="asset-properties">{{asset.nuevoDueno}}</td>
 
             <td class="asset-properties">{{asset.antiguoDueno}}</td>
 
-            <td class="asset-properties">{{asset.Activo}}</td>
-
-            <td class="asset-properties">{{asset.transactionId}}</td>
+            
+            <!-- <td class="asset-properties">{{asset.transactionId}}</td> -->
 
             <td class="asset-properties">{{asset.timestamp}}</td>            
 
@@ -270,8 +270,8 @@
              
             </td> -->
           </tr>
-        </tbody>
       </table>
+      </div>
       </div>
     </div>
   </div>

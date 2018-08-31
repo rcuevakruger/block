@@ -256,34 +256,31 @@
   <br>
 
   <div class="row">
-    <div class="col-md-12">
-      <table class="table table-responsive">
-        <thead class="thead">
-          <tr class="thead-cols">
+      <div class="col-md-12">
 
-            <th class="info">Estado de Activo</th>
-
-            <th class="info">Reaseguradora Encargada</th>
-
-            <th class="info">Activo</th>
-
+        <div class="table-users">
           
-            <th class="info">Fecha</th>
-
-            <!-- <th class="info-actions">Actions</th> -->
+          <table class="table">
+             <tr class="thead-cols">
+               
+              <th class="info">Activo</th>
+               
+               <th class="info">Estado de Activo</th>
+               
+               <th class="info">Reaseguradora Encargada</th>
+               
+               <th class="info">Fecha</th>
+               
+               <th class="info-actions"></th>
           </tr>
-        </thead>
-        <tbody>
           <tr *ngFor="let asset of allTransactions">
 
 
-            <td class="asset-properties">{{asset.estadoDeActivo}}</td>
-
-            <td class="asset-properties">{{asset.reaseguradoraEncargada}}</td>
-
             <td class="asset-properties">{{asset.Activo}}</td>
-
-
+            
+            <td class="asset-properties">{{asset.estadoDeActivo}}</td>
+            
+            <td class="asset-properties">{{asset.reaseguradoraEncargada}}</td>
 
             <td class="asset-properties">{{asset.timestamp}}</td>
 
@@ -317,8 +314,8 @@
   
               </td> -->
           </tr>
-        </tbody>
       </table>
+      </div>
     </div>
   </div>
 </div>

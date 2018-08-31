@@ -19,7 +19,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
 	selector: 'app-Materializar',
 	templateUrl: './Materializar.component.html',
-	styleUrls: ['./Materializar.component.css'],
+	styleUrls: ['./Materializar.component.scss'],
   providers: [MaterializarService]
 })
 export class MaterializarComponent implements OnInit {

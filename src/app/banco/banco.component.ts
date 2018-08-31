@@ -19,7 +19,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
 	selector: 'app-banco',
 	templateUrl: './banco.component.html',
-	styleUrls: ['./banco.component.css'],
+	styleUrls: ['./banco.component.scss'],
   providers: [bancoService]
 })
 export class bancoComponent implements OnInit {

@@ -29,7 +29,7 @@
               <div class="form-group text-left">
                 <label for="idActivo">Activo</label>
                 
-                  <input formControlName="idActivo" type="text" class="form-control">
+                  <input formControlName="idActivo" type="text" class="form-control" placeholder="id de activo + iniciales = OROrc">
                 
               </div>
             
@@ -39,7 +39,7 @@
               <div class="form-group text-left">
                 <label for="detallesActivo">Detalles de activo</label>
                 
-                  <input formControlName="detallesActivo" type="text" class="form-control">
+                  <input formControlName="detallesActivo" type="text" class="form-control" placeholder="descripción del activo">
                 
               </div>
             
@@ -49,7 +49,7 @@
               <div class="form-group text-left">
                 <label for="valorActivo">Valor de activo</label>
                 
-                  <input formControlName="valorActivo" type="number" step='any' class="form-control">
+                  <input formControlName="valorActivo" type="number" step='any' class="form-control" placeholder="valor en dolares">
                 
               </div>
 
@@ -59,7 +59,7 @@
               <div class="form-group text-left">
                 <label for="cantidad">Cantidad</label>
                 
-                  <input formControlName="cantidad" type="number" step='any' class="form-control">
+                  <input formControlName="cantidad" type="number" step='any' class="form-control" placeholder="cantidad en gramos">
                 
               </div>
           
@@ -232,7 +232,7 @@
               <div class="form-group text-left">
                 <label for="propietario">Propietario</label>
                 
-                    <textarea formControlName="propietario" class="form-control" rows="3"></textarea>
+                    <textarea formControlName="propietario" class="form-control" rows="3" placeholder="dueño del activo"></textarea>
                 
               </div>
             
@@ -552,9 +552,11 @@
   <br>
   <div class="row">
     <div class="col-md-12">
-      <table class="table table-responsive">
-        <thead class="thead">
-          <tr class="thead-cols" style="text-align: center;">
+
+        <div class="table-users scrollit">
+
+        <table class="table">
+          <tr class="thead-cols">
             
                 <th class="info">ID</th>
             
@@ -586,42 +588,40 @@
             
                 <th class="info">Propietario</th>
             
-              <!-- <th class="info-actions">Acciones</th> -->
+                <th class="info-actions"></th>
           </tr>
-        </thead>
-        <tbody>
           <tr *ngFor="let asset of allAssets">
 
             
-                <td class="asset-properties">{{asset.idActivo}}</td>
+                <td>{{asset.idActivo}}</td>
             
-                <td class="asset-properties">{{asset.detallesActivo}}</td>
+                <td>{{asset.detallesActivo}}</td>
             
-                <td class="asset-properties">{{asset.valorActivo}}</td>
+                <td>{{asset.valorActivo}} dolares</td>
 
-                <td class="asset-properties">{{asset.cantidad}}</td>
+                <td>{{asset.cantidad}} gramos</td>
             
-                <td class="asset-properties">{{asset.estadoDeActivo}}</td>
+                <td>{{asset.estadoDeActivo}}</td>
             
-                <td class="asset-properties">{{asset.enteBancario}}</td>
+                <td>{{asset.enteBancario}}</td>
             
-                <td class="asset-properties">{{asset.numeroPoliza}}</td>
+                <td>N° {{asset.numeroPoliza}}</td>
             
-                <td class="asset-properties">{{asset.fechaSolicitud}}</td>
+                <td>{{asset.fechaSolicitud | date: 'yyyy-MM-dd HH:mm:ss'}}</td>
             
-                <td class="asset-properties">{{asset.formaPago}}</td>
+                <td>{{asset.formaPago}}</td>
             
-                <td class="asset-properties">{{asset.vigencia}}</td>
+                <td>{{asset.vigencia}}</td>
             
-                <td class="asset-properties">{{asset.solicitante}}</td>
+                <td>{{asset.solicitante}}</td>
             
-                <td class="asset-properties">{{asset.sumaAsegurada}}</td>
+                <td>{{asset.sumaAsegurada}}</td>
             
-                <td class="asset-properties">{{asset.enteAsegurador}}</td>
+                <td>{{asset.enteAsegurador}}</td>
             
-                <td class="asset-properties">{{asset.enteReasegurador}}</td>
+                <td>{{asset.enteReasegurador}}</td>
             
-                <td class="asset-properties">{{asset.propietario}}</td>
+                <td>{{asset.propietario}}</td>
             
             <td>
               <button (click)="getForm(asset.idActivo);" type="button" class="btn btn-update" data-toggle="modal" data-target="#updateAssetModal">
@@ -649,8 +649,8 @@
               </button>
             </td>
           </tr>
-        </tbody>
-      </table>
+        </table>
+        </div>
     </div>
   </div>
 </div>

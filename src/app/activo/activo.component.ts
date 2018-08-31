@@ -19,7 +19,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
 	selector: 'app-activo',
 	templateUrl: './activo.component.html',
-	styleUrls: ['./activo.component.css'],
+	styleUrls: ['./activo.component.scss'],
   providers: [activoService]
 })
 export class activoComponent implements OnInit {
